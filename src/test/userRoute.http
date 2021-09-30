@@ -1,0 +1,34 @@
+@host=http://localhost:3000/api/v1
+
+### Access public Resource
+GET {{host}}/.well-known/jwks.json
+
+#### GET User route --->
+GET {{host}}/user
+
+### POST User register route ---> /register
+POST {{host}}/user/register
+Content-Type: application/json
+
+{
+  "email":"kismat1@nielit.gov.in",
+  "password":"1234"
+}
+
+### POST User register route ---> /register
+POST {{host}}/user/login
+Content-Type: application/json
+
+{
+  "email":"kismat1@nielit.gov.in",
+  "password":"1234"
+}
+
+### PUT User route--->
+PUT {{host}}/user
+
+### PATCH User route--->
+PATCH {{host}}/user
+
+### Not Existing route
+GET {{host}}/user/run

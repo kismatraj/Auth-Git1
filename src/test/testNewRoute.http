@@ -1,0 +1,16 @@
+@host=http://localhost:3000/api/v1/new-route
+
+#### GET Root Route 
+GET {{host}}
+
+### POST Root Route 
+POST {{host}}
+
+### PUT Root Route
+PUT {{host}}
+
+### PATCH Root Route
+PATCH {{host}}
+
+### Not Existing route
+GET {{host}}/run
