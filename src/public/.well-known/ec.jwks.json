@@ -1,0 +1,9 @@
+{
+  "kty": "EC",
+  "use": "sig",
+  "crv": "P-256",
+  "kid": "-----BEGIN PUBLIC KEY----- MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDtWwa3XuXBhWhFXIGV73DV0etqiF Mg3opoQjBdMpmegET7Im36oYF8b48M5i72katNX1HwZAIZ9TqmX2hYeKqQ== -----END PUBLIC KEY-----",
+  "x": "BAJLBPtNAUneMMuqu_faRihG6MjTZ-ZF9ZlsNn-nvlA",
+  "y": "KUXVFd_PA9oyXlYKEDZoDgrbXo-Nuc0nwQIMpKCV-80",
+  "alg": "ES256"
+}

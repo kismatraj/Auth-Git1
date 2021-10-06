@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const createError = require('http-errors');
+const path = require('path');
 const errorHandlerMiddleware = require('./middleware/errorHandler.middleware');
 const indexRouter = require('./routes/index.route');
 const corsOptions = require('./middleware/cors.options');
@@ -25,7 +26,9 @@ app.use(helmet.hidePoweredBy());
 app.use(morgan('dev'));
 
 // Public resources
-app.use(`${process.env.API_ROUTE_VERSION}`, express.static('./public'));
+const publicPath = path.join(path.resolve('./'), '/src/public');
+console.log(publicPath);
+app.use(`${process.env.API_ROUTE_VERSION}/public`, express.static(publicPath));
 
 /* Configure the api routes */
 app.use(`${process.env.API_ROUTE_VERSION}`, indexRouter);

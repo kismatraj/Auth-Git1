@@ -1,3 +1,0 @@
-interface LabelledValue {
-  label: string;
-}

@@ -1,7 +1,7 @@
 @host=http://localhost:3000/api/v1
 
 ### Access public Resource
-GET {{host}}/.well-known/jwks.json
+GET http://localhost:3000/api/v1/public/.well-known/ec.jwks.json
 
 #### GET User route --->
 GET {{host}}/user
@@ -21,7 +21,8 @@ Content-Type: application/json
 
 {
   "email":"kismat1@nielit.gov.in",
-  "password":"1234"
+  "password":"1234",
+  "test":"sdfgjsdf"
 }
 
 ### PUT User route--->
